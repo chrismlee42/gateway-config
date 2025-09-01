@@ -1,0 +1,19 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+metadata:
+  name: gateway-config
+
+commonLabels:
+  app: gateway
+  managedBy: argocd
+  managementCodeGroup: chrismlee42-dev
+  managementCodeProject: gateway-config
+
+namespace: default
+
+resources:
+  - default-https-redirect-httproute.yaml
+  - default-gateway.yaml
+  - domain-wildcard-certificate.yaml
+  # - tls-passthrough-gateway.yaml
+  # - tls-passthrough-tls-redirect-httproute.yaml

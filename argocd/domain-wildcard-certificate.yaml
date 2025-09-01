@@ -1,0 +1,16 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: clee-private-morphacy-net
+spec:
+  commonName: chris-pc.clee.private.morphacy.net
+  secretName: clee-private-morphacy-net
+  dnsNames:
+    - "chris-pc.clee.private.morphacy.net"
+    - "service.clee.private.morphacy.net"
+    - "service.chris-pc.clee.private.morphacy.net"
+    - "*.service.clee.private.morphacy.net"
+    - "*.service.chris-pc.clee.private.morphacy.net"
+  issuerRef:
+    kind: ClusterIssuer
+    name: letsencrypt-prod
