@@ -15,10 +15,10 @@ spec:
       port: 80
       sectionName: http
   rules:
-    - matches:
-        - path:
-            type: PathPrefix
-            value: /
+    - # matches:
+      #   - path:
+      #       type: PathPrefix
+      #       value: /
       filters:
         - type: RequestRedirect
           requestRedirect:
