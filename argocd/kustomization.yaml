@@ -3,11 +3,12 @@ kind: Kustomization
 metadata:
   name: gateway-config
 
-commonLabels:
-  app: gateway
-  managedBy: argocd
-  managementCodeGroup: chrismlee42-dev
-  managementCodeProject: gateway-config
+labels:
+  - pairs:
+      app: gateway
+      managedBy: argocd
+      managementCodeGroup: chrismlee42-dev
+      managementCodeProject: gateway-config
 
 namespace: default
 
