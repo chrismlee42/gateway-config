@@ -26,3 +26,16 @@ spec:
         certificateRefs:
           - kind: Secret
             name: clee-private-morphacy-net
+    - name: tls
+      protocol: TLS
+      port: 443
+      allowedRoutes:
+        kinds:
+          - kind: TLSRoute
+        namespaces:
+          from: All
+      tls:
+        mode: Passthrough
+        certificateRefs:
+          - kind: Secret
+            name: clee-private-morphacy-net

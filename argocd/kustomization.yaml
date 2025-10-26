@@ -15,5 +15,5 @@ resources:
   - default-https-redirect-httproute.yaml
   - default-gateway.yaml
   - domain-wildcard-certificate.yaml
-  - tls-passthrough-gateway.yaml
+  # - tls-passthrough-gateway.yaml
   # - tls-passthrough-tls-redirect-httproute.yaml
