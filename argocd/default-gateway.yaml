@@ -3,6 +3,9 @@ kind: Gateway
 metadata:
   name: default
 spec:
+  addresses:
+    - type: IPAddress
+      value: 192.168.18.3
   gatewayClassName: cilium
   listeners:
     - name: http
