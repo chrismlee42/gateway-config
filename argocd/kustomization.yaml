@@ -13,7 +13,7 @@ labels:
 namespace: default
 
 resources:
-  - cilium-ciliumgatewayclassconfig.yaml
+  # - cilium-ciliumgatewayclassconfig.yaml
   - default-https-redirect-httproute.yaml
   - default-gateway.yaml
   - domain-wildcard-certificate.yaml
