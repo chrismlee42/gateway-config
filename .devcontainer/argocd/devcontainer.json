@@ -27,6 +27,9 @@
         "ghcr.io/devcontainers-extra/features/argo-cd:1": {
             "version": "latest"
         },
+        "ghcr.io/audacioustux/devcontainers/cilium:1": {
+            "version": "latest"
+        },
 		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
 			"enableNonRootDocker": "true",
 			"moby": "true",
