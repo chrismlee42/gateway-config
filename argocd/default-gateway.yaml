@@ -13,6 +13,7 @@ spec:
       port: 80
       allowedRoutes:
         kinds:
+          - kind: GRPCRoute
           - kind: HTTPRoute
         namespaces:
           from: Same
@@ -21,6 +22,7 @@ spec:
       port: 443
       allowedRoutes:
         kinds:
+          - kind: GRPCRoute
           - kind: HTTPRoute
         namespaces:
           from: All
